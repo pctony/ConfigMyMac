@@ -7,4 +7,5 @@ You should look at [00_variables.sh](/MyMac/00_variables.sh) for the variables y
 After cloning the repo, and editing the variables as mentioned above you should do this: 
 
 `cd ConfigMyMac/bin`
+
 `./start.sh `
