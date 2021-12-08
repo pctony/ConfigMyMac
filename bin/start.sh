@@ -15,5 +15,6 @@ source ${MyMac_ROOT}/01_basics.sh
 source ${MyMac_ROOT}/10_systemsettings.sh
 source ${MyMac_ROOT}/20_homebrew.sh
 source ${MyMac_ROOT}/30_appstore.sh
+source ${MyMac_ROOT}/40_dockutil.sh
 
 
