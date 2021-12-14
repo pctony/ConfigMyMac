@@ -4,7 +4,7 @@
 
 
 # This is the list of homebrew formulas that will be installed. 
-BREW_FORMULAS="alfred axel dockutil exiftool gettext hub mas pyenv tmux visual-studio-code" 
+BREW_FORMULAS="alfred axel chef-workstation dockutil exiftool gettext hub mas pyenv tmux visual-studio-code" 
 
 # This is the list of homebrew formulas that will be installed. 
 BREW_CASKS=""
