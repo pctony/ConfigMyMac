@@ -5,6 +5,10 @@ if ask "Do you want to apply MacOS system settings?" Y; then
 
   # Applies system and application defaults.
   
+  printf "%s\n" "Set Screensaver location""
+  defaults write com.apple.screencapture location ~/Nextcloud/appData/Screenshots
+  killall SystemUIServer
+
   printf "%s\n" "System - Reveal IP address, hostname, OS version, etc. when clicking login window clock."
   printf "You will be prompted for your sudo credentials\n"
   sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
