@@ -20,26 +20,10 @@ fi
 # Install homebrew formulas 
 
 if ask "Do you want to proceed with installing brew formulas?" Y; then 
-  printf "Proceeding to install brew formulas...\n${BREW_FORMULAS}\n"
-  for formula in ${BREW_FORMULAS}; do 
-    printf "Installing ${formula}\n"
-    brew install ${formula};
-  done
+  printf "Proceeding to install brew using 'MyMac/homebrew/.brewfile' \n"
+  pushd MyMac/homebrew
+    brew bundle
+  popd
 else
   printf "Skipping installing brew formulas.\n\n"
 fi
-
-
-# Install homebrew casks 
-
-if ask "Do you want to proceed with installing brew casks?" Y; then 
-  printf "Proceeding to install brew casks...\n${BREW_CASKS}\n"
-  for cask in ${BREW_CASKS}; do 
-    printf "Installing ${cask}\n"
-    brew cask install ${cask};
-  done
-else
-  printf "Skipping installing brew casks.\n\n"
-fi
-
-
